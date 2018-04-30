@@ -3,19 +3,19 @@
 #
 # Usage example: /bin/sh ./git_push.sh wing328 swagger-petstore-perl "minor update"
 
-git_user_id=$1
-git_repo_id=$2
+git_user_id=$kocicjelena
+git_repo_id=$swagger3
 release_note=$3
 
-if [ "$git_user_id" = "" ]; then
-    git_user_id="kocicjelena"
+if [ "$git_user_id" = ""]; then
+    git_user_id="git_user_id"
     echo "[INFO] No command line input provided. Set \$git_user_id to $git_user_id"
 fi
 
-if [ "$git_repo_id" = "" ]; then
-    git_repo_id="swagger3"
+if [ "$git_repo_id" = "swagger3" ]; then
+    git_repo_id="git_repo_id"
     echo "[INFO] No command line input provided. Set \$git_repo_id to $git_repo_id"
-fi
+fiswagger3
 
 if [ "$release_note" = "" ]; then
     release_note="Minor update"
